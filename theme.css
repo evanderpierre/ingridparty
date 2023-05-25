@@ -71,7 +71,7 @@ h1 {
 
   /*btn*/
   
-  input[type="submit"]     {
+  button    {
   padding: 0.5rem 2.5rem 0.5rem 2.5rem;
   box-shadow: 0px 0px 0px 3px black;
   border: 0;
@@ -91,12 +91,12 @@ h1 {
 
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: #f03a17;
   color: white;
 }
 
-input[type="submit"]::before {
+button::before {
   content: "😍";
   position: absolute;
   left: -0rem;
@@ -107,7 +107,7 @@ input[type="submit"]::before {
   transform: rotate(0deg);
 }
 
-input[type="submit"]:hover::before {
+button:hover::before {
   content: "😘";
   opacity: 1;
   visibility: visible;
@@ -118,7 +118,7 @@ input[type="submit"]:hover::before {
   animation: rightRun 2s forwards;
 }
 
-input[type="submit"]:active::before {
+button:active::before {
   content: "🥰";
 }
 
