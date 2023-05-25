@@ -161,3 +161,28 @@ button:active::before {
   .input:focus {
     border: 2px solid var(--input-focus);
   }
+
+  /*Mobile*/
+  /* @media screen and (min-width: 480px) {
+body{
+    background-color: #e8e8e8;
+    background-color: rgb(255 185 185);
+    background-color: #ffd1e0;
+    background-image: url(bg_images/mobile-bg.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+}
+
+  } */
+
+  @media only screen and (max-width: 800px) {
+body {
+  
+    background-image: url(bg_images/mobile-bg.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;}
+
+  }
