@@ -137,7 +137,7 @@ button:active::before {
   }
 }
 
-.form_field_group input, .form_field_group textarea {
+.form_field_group input, .form_field_group textarea, .form_field_group select {
     /* --input-focus: #2d8cf0;
     --font-color: #323232;
     --font-color-sub: #666;
@@ -159,6 +159,9 @@ button:active::before {
     
 
 }
+.form_field_group select{
+  width: 100%;;
+}
 .form_field_group textarea { 
     height: 100px;
 }
@@ -168,7 +171,7 @@ button:active::before {
   }
   
   .input:focus {
-    border: 2px solid var(--input-focus);
+    border: 2px solid #4d3836;
   }
 
   /*Mobile*/
