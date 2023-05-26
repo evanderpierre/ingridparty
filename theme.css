@@ -62,6 +62,7 @@ h1 {
     font-family: Genty, cursive;
     font-size: 70px;
     margin-bottom: 5px;
+    margin-top: 0px;
     color: rgb(225, 106, 106);
     text-shadow: 3px 2px #3f4143;
     /* -webkit-text-stroke: 3px #e16a6a */
