@@ -6,7 +6,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="theme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Function to calculate the time remaining until August 12th
+        function getTimeRemaining() {
+            var today = new Date();
+            var targetDate = new Date("August 12, " + today.getFullYear());
+            var timeRemaining = targetDate - today;
 
+            var seconds = Math.floor((timeRemaining / 1000) % 60);
+            var minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
+            var hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+
+            return {
+                total: timeRemaining,
+                days: days,
+                hours: hours,
+                minutes: minutes,
+                seconds: seconds
+            };
+        }
+
+        // Function to update the countdown display
+        function updateCountdown() {
+            var countdown = getTimeRemaining();
+
+            document.getElementById("days").innerHTML = countdown.days;
+            document.getElementById("hours").innerHTML = countdown.hours;
+            document.getElementById("minutes").innerHTML = countdown.minutes;
+            document.getElementById("seconds").innerHTML = countdown.seconds;
+        }
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
 </head>
 
 <body>
@@ -17,6 +50,8 @@
                     <h1 class="animate__bounce">Harley's 1st Birthday Party</h1>
                     <p>Get ready to rock and roll at Harley's 1st Groovy Birthday Bash! Join us as we kick off the funky
                         festivities at 3pm EST, located at 168 Myrtle St, Lynn, MA 01905. </p>
+
+
                     <p>
                         <strong>Thank You for Groovin' with Us!
 
