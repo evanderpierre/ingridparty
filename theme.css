@@ -165,6 +165,9 @@ button:active::before {
 .form_field_group textarea { 
     height: 100px;
 }
+.hide {
+  display: none;
+}
 ::placeholder {
     color: var(--font-color-sub);
     opacity: 0.8;
