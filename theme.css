@@ -218,7 +218,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 0 !IMPORTANT;
 }
 
 .mb-30 {
