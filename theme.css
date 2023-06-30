@@ -225,3 +225,7 @@ body {
   margin-bottom: 30px;
 
 }
+
+button.default {
+  background: #e45b3b;
+}
