@@ -276,8 +276,9 @@ button {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 55px;
-    line-height: 55px;  }
+    font-size: 55px  !important;
+    line-height: 55px  !important;
+   }
 }
 
 button.default a {
