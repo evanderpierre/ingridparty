@@ -109,7 +109,7 @@ h2 {
 }
 
 h1 {
-  
+
   font-size: 5rem;
   line-height: 5rem;
   margin: 0;
@@ -260,7 +260,6 @@ button {
 }
 .form_field_group_submit {
   text-align: center;
-.input:focus {
 }
 
 /*Mobile*/
@@ -291,14 +290,4 @@ button {
     background-position: center !important;
   
   }
-}
-
-button.default a {
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-button.default {
 }
