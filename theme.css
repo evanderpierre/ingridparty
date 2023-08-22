@@ -282,9 +282,7 @@ button {
    }
 
    html {
-    /* background: #8dcfcd; */
-    margin: 0;
-    background-image: url(/bg_images/ios-mg-bg.png)  !important;
+    background-image: url(bg_images/ios-img-bg.png)  !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
