@@ -279,6 +279,16 @@ button {
     font-size: 55px  !important;
     line-height: 55px  !important;
    }
+
+   html {
+    /* background: #8dcfcd; */
+    margin: 0;
+    background-image: url(/bg_images/ios-bg.png)  !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  
+  }
 }
 
 button.default a {
