@@ -288,4 +288,10 @@ button {
     background-position: center !important;
   
   }
+  .form-wrapper {
+    background: transparent;
+  }
+  .inner_form {
+    padding: 40px 45px 30px 45px;
+}
 }
