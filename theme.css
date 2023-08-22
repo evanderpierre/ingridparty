@@ -1,38 +1,90 @@
- 
-  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @import url(https://fonts.googleapis.com/css?family=VT323);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Leckerli+One&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap');
 
 
-    @font-face {
-        font-family: "Genty"; /* Name the font whatever you like */
-        src: url("fonts/genty/GentyDemo-Regular.ttf") format("truetype"); /* Adjust the path and filename as needed */
-    }
 
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Leckerli One', cursive;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Sacramento', cursive;*/
+
+
+
+html {
+  /* background: #8dcfcd; */
+  margin: 0;
+  background-image: url(/bg_images/bg-50s.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+body * {
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+
+}
+#description {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  font-weight: 600;
+}
 input,
 textarea {
-  height: 40px;
+  height: 45px;
   padding: 5px 10px;
   width: 100%;
-  border: none;
+  border: 1px solid black;
+  font-weight: 600;
+}
+.text-center {
+  text-align: center;
+}
+.first {
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  padding-top: 60px;
 }
 
-body {
-  background-color: #e8e8e8;
-  background-color: rgb(255 185 185);
-  background-color: #ffd1e0;
-  background-image: url(bg_images/bg-4.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.first .inner-col {
+  max-width: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column;
+  margin: auto;
 }
-html {
-    /* height: 100%; */
+
+/* .second {
+  flex: 0 0 20%;
+  background: url(/bg_images/bg-retro.svg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+body {
+ 
+
 }
+.form_field_group select {
+  width: 100%;
+}
+
+.eyebrow {
+  width: 300px;
+}
+
+.row {
+  display: flex;
+}
+
 label {
-  display: none;
 }
 
 form > div {
@@ -40,153 +92,176 @@ form > div {
 }
 
 section.wrapper {
-  max-width: 600px;
-  padding: 30px;
-  padding-top: 50px;
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 section.container {
-  display: flex;
-  justify-content: center;
 }
 
 h1,
-p, h2 {
-  text-align: center;
+p,
+h2 {
+  /* text-align: center; */
 }
+
 h1 {
-    font-family: 'Fredericka the Great', cursive;
-    font-family: 'Luckiest Guy', cursive;
-    font-family: Genty, cursive;
-    font-size: 70px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    color: rgb(225, 106, 106);
-    text-shadow: 3px 2px #3f4143;
-    /* -webkit-text-stroke: 3px #e16a6a */
-    line-height: 65px;
-
-  }
-  h2 {
-    margin-bottom: 5px;
-    font-family: 'Poppins';
-    font-size: 20px;
-    color: #4d3836;
-    font-weight: 500;
-}
-  p {
-    font-family: 'Poppins';
-    font-size: 15px;
-    color: white;
-    color:  #4d3836;
-    font-weight: 500;
-
-  }
-
-  /*btn*/
-  
-  button    {
-  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-  box-shadow: 0px 0px 0px 3px black;
-  border: 0;
-  border-radius: 0.5rem;
-  font-size: 24px;
-  background-color: #ffc83d;
-  color: black;
-  font-weight: bolder;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: relative;
-  transition: all .9s ease-in-out;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: 'Luckiest Guy', cursive;
-  height: 55px;
-
+  font-size: 5rem;
+  line-height: 5rem;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin: 0px 0px 15px 0px;
+  font-family: 'Leckerli One', cursive;
+  color: #FAE056;
+  text-shadow: 6px 3px 0px #2d6b8c;
 }
 
-button:hover {
-  background-color: #f03a17;
+h2 {
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+label{display: none;}
+#date {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+h2 {
+  margin-top: 0px;
+}
+.white-text {
   color: white;
 }
-
-button::before {
-  content: "😍";
-  position: absolute;
-  left: -0rem;
-  top: 0rem;
-  opacity: 1;
-  font-size: 1.55rem;
-  transition: all .9s ease-in-out;
-  transform: rotate(0deg);
+/* div#details {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 50px;
+} */
+div#details {
+  display: flex;
+  margin: 0 auto;
 }
-
-button:hover::before {
-  content: "😘";
-  opacity: 1;
-  visibility: visible;
-  transform: rotate(40deg);
-  font-size: 2.5rem;
-  top: -0.75rem;
-  transition: all .9s ease-in-out;
-  animation: rightRun 2s forwards;
+div#details > div:first-child {
+  border-right: 3px solid #fae056;
+  padding-right: 10px;
 }
-
-button:active::before {
-  content: "🥰";
+div#details > div:last-child {
+  padding-left: 10px;
 }
-
-@keyframes rightRun {
-  100% {
-    transform: translateX(440px);
-  }
+div#details > div {
+  width: 50%;
 }
-
-.form_field_group input, .form_field_group textarea, .form_field_group select {
-    /* --input-focus: #2d8cf0;
-    --font-color: #323232;
-    --font-color-sub: #666;
-    --bg-color: #fff;
-    --main-color: #323232; */
+/*btn*/
+button {
+  background: #EDA9A7;
+    border: none;
     height: 50px;
-    border-radius: 5px;
-    border: 2px solid #4d3836;
-    background-color: white;
-    box-shadow: 4px 4px #4d3836;
-    font-size: 15px;
-    font-weight: 600;
-    color: #4d3836;
-    padding: 5px 10px;
-    outline: none;
-    text-align: center;
-    font-family: 'Poppins';
-
-    
+    border: 1px solid black;
+    width: 250px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-wrapper {
+  background: white;
+  margin: 20px 0px;
+  border: 1px solid black;
 
 }
-.form_field_group select{
-  width: 100%;;
+.inner_form {
+  padding: 40px 60px 30px 60px;
 }
-.form_field_group textarea { 
-    height: 100px;
+.form_field_group textarea {
+  height: 100px;
 }
+.browser_bar {
+  background: #EDA9A7;
+  height: 35px;
+  border-bottom: 1px solid black;
+  display: flex;
+  padding: 0px 15px;
+  align-items: center;
+  justify-content: space-between;}
+
+.bt1, .bt2, .bt3 {
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.bt1 div {
+  border: 1px solid black;
+}
+
+.bt2 div {
+  border: 1px solid black;
+  height: 20px;
+}
+.bt3 {
+  justify-content: center;
+}
+.bt3 div {
+ 
+}
+.box-wrapper {
+  display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bt3 div {
+  text-align: center;
+}
+  button:hover {
+    transition: .7s;
+    background: #60b5e8;
+}
+
+.form_field_group input,
+.form_field_group textarea,
+.form_field_group select {
+  background: #FAE056;
+}
+
+.form_field_group select {
+  height: 45px;
+  font-weight: 600;
+
+  border: 1px solid black;
+}
+
+.form_field_group textarea {
+}
+
 .hide {
   display: none;
 }
-::placeholder {
-    color: var(--font-color-sub);
-    opacity: 0.8;
-  }
-  
-  .input:focus {
-    border: 2px solid #4d3836;
-  }
 
-  /*Mobile*/
-  /* @media screen and (min-width: 480px) {
-body{
+::placeholder {
+  color: black;
+  font-weight: 600;
+
+}
+.form_field_group_submit {
+  text-align: center;
+.input:focus {
+}
+
+/*Mobile*/
+/* @media screen and (min-width: 480px) {
+  body {
     background-color: #e8e8e8;
     background-color: rgb(255 185 185);
     background-color: #ffd1e0;
@@ -194,37 +269,20 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  
+  }
+} */
+
+@media only screen and (max-width: 800px) {
+  body {
+  }
 }
 
-  } */
-
-  @media only screen and (max-width: 800px) {
-body {
-  
-    background-image: url(bg_images/mobile-bg.svg) !important;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;}
-
-  }
-
-  button.default a {
-    border: none;
-    text-decoration: none;
-    color: black;
-    display: block;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button.default a {
 }
 
 .mb-30 {
   margin-bottom: 30px;
-
 }
 
 button.default {
-  background: #e45b3b;
 }
